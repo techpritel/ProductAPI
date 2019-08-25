@@ -1,0 +1,11 @@
+{"_id":{"$oid":"5d5bcd5375af8bb30d00057a"},"ProductName":"Curtains","Price":54.93,"Category":{"_id":"5d5bb46e75af8bb30d000578","Name":"Household"},"NumberinStocks":5.0,"Rating":4.0}
+{"_id":{"$oid":"5d5d0062345acf6958a5e2a9"},"ProductName":"Titan","Price":54.93,"Category":{"_id":"5d5bb50b0e940230bcbdc1cf","Name":"Watches"},"NumberinStocks":10.0,"Rating":4.0}
+{"_id":{"$oid":"5d5d00ce345acf6958a5e2aa"},"ProductName":"LG","Price":600.0,"Category":{"_id":"5d5ccc60eef8a730cc35daaf","Name":"TV"},"NumberinStocks":5.0,"Rating":5.0}
+{"_id":{"$oid":"5d5d00ea345acf6958a5e2ab"},"ProductName":"Samsung","Price":500.0,"Category":{"_id":"5d5ccc60eef8a730cc35daaf","Name":"TV"},"NumberinStocks":5.0,"Rating":5.0}
+{"_id":{"$oid":"5d5d013d345acf6958a5e2ac"},"ProductName":"Microwave Oven","Price":508.0,"Category":{"_id":"5d5bb46e75af8bb30d000578","Name":"Household"},"NumberinStocks":4.0,"Rating":4.0}
+{"_id":{"$oid":"5d5d016e345acf6958a5e2ad"},"ProductName":"Rolex","Price":65.0,"Category":{"_id":"5d5bb50b0e940230bcbdc1cf","Name":"Watches"},"NumberinStocks":8.0,"Rating":5.0}
+{"_id":{"$oid":"5d5d01b7345acf6958a5e2ae"},"ProductName":"Iphone 6","Price":82.0,"Category":{"_id":"5d5bb5330e940230bcbdc1d0","Name":"Smartphones"},"NumberinStocks":12.0,"Rating":4.5}
+{"_id":{"$oid":"5d5d01e3345acf6958a5e2af"},"ProductName":"Samsung Note8","Price":80.0,"Category":{"_id":"5d5bb5330e940230bcbdc1d0","Name":"Smartphones"},"NumberinStocks":12.0,"Rating":5.0}
+{"_id":{"$oid":"5d5d021d345acf6958a5e2b0"},"ProductName":"Acer Aspire","Price":1000.0,"Category":{"_id":"5d5bb4f80e940230bcbdc1ce","Name":"Computers"},"NumberinStocks":15.0,"Rating":4.0}
+{"_id":{"$oid":"5d5d023c345acf6958a5e2b1"},"ProductName":"Dell","Price":1500.0,"Category":{"_id":"5d5bb4f80e940230bcbdc1ce","Name":"Computers"},"NumberinStocks":10.0,"Rating":4.5}
+{"_id":{"$oid":"5d5d0252345acf6958a5e2b2"},"ProductName":"Asus","Price":450.0,"Category":{"_id":"5d5bb4f80e940230bcbdc1ce","Name":"Computers"},"NumberinStocks":25.0,"Rating":3.5}

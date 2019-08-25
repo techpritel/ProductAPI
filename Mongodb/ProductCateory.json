@@ -1,0 +1,5 @@
+{"_id":{"$oid":"5d5bb46e75af8bb30d000578"},"Name":"Household"}
+{"_id":{"$oid":"5d5bb4f80e940230bcbdc1ce"},"Name":"Computers"}
+{"_id":{"$oid":"5d5bb50b0e940230bcbdc1cf"},"Name":"Watches"}
+{"_id":{"$oid":"5d5bb5330e940230bcbdc1d0"},"Name":"Smartphones"}
+{"_id":{"$oid":"5d5ccc60eef8a730cc35daaf"},"Name":"TV"}

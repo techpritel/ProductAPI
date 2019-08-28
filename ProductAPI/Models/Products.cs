@@ -19,6 +19,11 @@ namespace ProductAPI.Models
         [JsonProperty(PropertyName = "price")]
         public double Price { get; set; }
 
+       
+        [JsonProperty(PropertyName = "categoryId")]
+        [BsonIgnore]
+        public string categoryId { get; set; }
+
         [BsonElement("Category")]
         [JsonProperty(PropertyName = "category")]
         public ProductCategory Category { get; set; }

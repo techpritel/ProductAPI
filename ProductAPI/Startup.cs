@@ -29,18 +29,14 @@ namespace ProductAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddCors(options =>
-            //{
-            //    options.AddPolicy(MyAllowSpecificOrigins,
-            //    builder =>
-            //    {
-            //        builder.WithOrigins("http://localhost:3000");
-            //    });
-            //});
-
-            services.AddCors(c =>
+            services.AddCors(options =>
             {
-                c.AddPolicy("AllowOrigin", option => option.AllowAnyOrigin());
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials()
+                    );
             });
             services.Configure<ProductstoreDatabaseSettings>(
         Configuration.GetSection(nameof(ProductstoreDatabaseSettings)));
@@ -63,7 +59,7 @@ namespace ProductAPI
             {
                 app.UseHsts();
             }
-            app.UseCors(options => options.AllowAnyOrigin());
+            app.UseCors("CorsPolicy");
 
             app.UseHttpsRedirection();
             app.UseMvc();

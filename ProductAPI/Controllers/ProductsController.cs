@@ -1,18 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProductAPI.Models;
 using ProductRatingApi.Services;
+using System.Collections.Generic;
 
 namespace ProductAPI.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
+    [ApiController]    
     [EnableCors("CorsPolicy")]
+    [Authorize]
     public class ProductsController : ControllerBase
     {
         private readonly ProductsService _productService;
@@ -25,10 +23,12 @@ namespace ProductAPI.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public ActionResult<List<Products>> Get() =>
             _productService.Get();
 
         [HttpGet("{id:length(24)}", Name = "Getproduct")]
+        [AllowAnonymous]
         public ActionResult<Products> Get(string id)
         {
             var product = _productService.Get(id);
@@ -41,7 +41,7 @@ namespace ProductAPI.Controllers
             return product;
         }
 
-        [HttpPost]
+        [HttpPost]       
         public ActionResult<Products> Create(Products product)
         {
            //var _productCategoryService = new ProductCategoryService() ;
